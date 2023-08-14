@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="./key.svg" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer type="module"></script>
+</head>
+
+<body>
+    <div class="container flex">
+
+        <i id="icon" class="fa-solid fa-sun"></i>
+
+        <h1 class="title">Generate a <span>random password</span></h1>
+
+        <p class="sub-title">Never use an insecure password again.</p>
+
+        <button id="generate" class="btn">Generate passwords</button>
+
+        <div class="line"></div>
+
+        <div class="flex pass-box">
+            <div class="first-pass">
+                <a href="#" class="pass flex" id="first-pass"></a>
+                <i class="fa-solid fa-clipboard first-clip"></i>
+                <p class="first-copy">Copied to clipboard</p>
+            </div>
+            <div class="sec-pass">
+                <a href="#" class="pass flex" id="sec-pass"></a>
+                <i class="fa-solid fa-clipboard sec-clip"></i>
+                <p class="sec-copy">Copied to clipboard</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/53af5e9bb6.js" crossorigin="anonymous"></script>
+    <script type="module" src="data.js"></script>
+
+</body>
+
+</html>
