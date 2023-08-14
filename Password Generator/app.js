@@ -124,12 +124,8 @@ firstClip.addEventListener("click", () => copyToClipboard(firstPass, firstCopy))
 secClip.addEventListener("click", () => copyToClipboard(secPass, secCopy));
 
 function toggleDarkMode() {
-    const elementsToToggle = [container, title, subTitle, line, generateBtn, icon];
+    const elementsToToggle = [container, title, subTitle, line, firstCopy, secCopy];
     elementsToToggle.forEach(element => element.classList.toggle("dark"));
-
-    const copyElements = [firstCopy, secCopy]; // Assuming these elements are defined elsewhere
-    copyElements.forEach(element => element.classList.toggle("dark"));
-
     icon.classList.toggle("fa-moon");
     icon.classList.toggle("fa-sun");
 }
